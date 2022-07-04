@@ -1,0 +1,43 @@
+.text-100 {
+  letter-spacing: 0;
+  line-height: 27px;
+  margin-left: 1px;
+  margin-top: 23px;
+  min-height: 81px;
+  min-width: 233px;
+}
+
+.text-100.text-102 {
+  margin-top: 20px;
+  min-height: 54px;
+  min-width: 159px;
+}
+
+.text-100.text-103 {
+  margin-left: unset;
+  margin-top: 20px;
+  min-height: 54px;
+  min-width: 210px;
+}
+
+.text-100.text-105 {
+  margin-left: 16px;
+  margin-top: unset;
+  min-height: 54px;
+  min-width: 161px;
+}
+
+.text-100.text-106 {
+  margin-left: 18px;
+  margin-top: unset;
+  min-width: 149px;
+}
+
+.text-100.infozlatmaxru {
+  margin-left: 14px;
+  margin-top: unset;
+  min-height: 27px;
+  min-width: 150px;
+  white-space: nowrap;
+}
+

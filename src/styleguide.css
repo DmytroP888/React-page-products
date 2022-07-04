@@ -1,0 +1,282 @@
+:root { 
+  --athens-gray: #ecf1f2;
+  --black: #000000;
+  --black-2: #00000033;
+  --black-32: #00000080;
+  --black-52: #04040480;
+  --black-6: #0404044c;
+  --buttercup: #f6b817;
+  --celeste: #cbcbcb;
+  --coconut: #fefefe;
+  --cod-gray: #07070708;
+  --fuel-yellow: #e7a931;
+  --licorice: #141414;
+  --licorice-2: #14141480;
+  --romance: #fdfdfd;
+  --shark: #2a2a2a;
+  --silver-chalice: #ababab;
+  --white: #ffffff;
+  --white-2: #ffffffcc;
+  --white-32: #ffffff0d;
+  --white-42: #ffffff08;
+  --white-5: #ffffff85;
+ 
+  --font-size-l: 20px;
+  --font-size-m: 18px;
+  --font-size-s: 16px;
+  --font-size-xl: 24px;
+  --font-size-xs: 14px;
+  --font-size-xxs: 8px;
+ 
+  --font-family-montserrat: "Montserrat", Helvetica;
+}
+.montserrat-medium-licorice-16px {
+  color: var(--licorice);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-fuel-yellow-16px {
+  color: var(--fuel-yellow);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-semi-bold-licorice-20px {
+  color: var(--licorice);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.montserrat-semi-bold-silver-chalice-16px {
+  color: var(--silver-chalice);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.montserrat-medium-white-18px {
+  color: var(--white-2);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-silver-chalice-16px {
+  color: var(--silver-chalice);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-semi-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.montserrat-semi-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.montserrat-medium-white-18px-2 {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-black-18px {
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-fuel-yellow-18px {
+  color: var(--fuel-yellow);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-semi-bold-black-18px {
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.montserrat-medium-white-14px {
+  color: var(--white-2);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-white-8px {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-black-14px {
+  color: var(--black-32);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-bold-fuel-yellow-18px {
+  color: var(--fuel-yellow);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.montserrat-bold-licorice-24px {
+  color: var(--licorice);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.montserrat-medium-black-16px-2 {
+  color: var(--black-32);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.montserrat-medium-licorice-14px {
+  color: var(--licorice-2);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-semi-bold-fuel-yellow-20px {
+  color: var(--fuel-yellow);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.montserrat-bold-fuel-yellow-24px {
+  color: var(--fuel-yellow);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.montserrat-medium-white-18px-3 {
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-white-16px-2 {
+  color: var(--white-2);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.montserrat-medium-white-16px-3 {
+  color: var(--white-5);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.border-1px-black-2 {
+  border: 1px solid var(--black-2);
+}
+
+.border-1px-celeste {
+  border: 1px solid var(--celeste);
+}
+
+.border-1px-white {
+  border: 1px solid var(--white);
+}
+
+.border-1-5px-black {
+  border: 1.5px solid var(--black);
+}
+
+.border-1px-black-5 {
+  border: 1px solid var(--black-52);
+}
+
+.border-1px-black-3 {
+  border: 1px solid var(--black-32);
+}
+
+.border-1px-black-6 {
+  border: 1px solid var(--black-6);
+}
+
+.border-1px-fuel-yellow {
+  border: 1px solid var(--fuel-yellow);
+}
+
+.border-2px-fuel-yellow {
+  border: 2px solid var(--fuel-yellow);
+}
