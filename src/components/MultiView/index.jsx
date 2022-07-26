@@ -1,4 +1,4 @@
-import React from "react";
+// import React, { useRef, useState } from "react";
 import Group85 from "../Header multi view/Group85";
 import Group61 from "../Header multi view/Group61";
 import Group84 from "../Header multi view/Group84";
@@ -12,7 +12,11 @@ import Group95 from "../Footer multi view/Group95";
 import Group96 from "../Footer multi view/Group96";
 import Group9432 from "../Footer multi view/Group9432";
 import View from "../Footer multi view/View";
+import Collapse from "./Collapse";
+import FilterPriceRangeInputBlock from "./FiterPriceRangeInputBlock";
 import "./MultiView.css";
+import "../../globals.css";
+
 
 function MultiView(props) {
   const {
@@ -30,131 +34,6 @@ function MultiView(props) {
     text114,
     text115,
     text327,
-    text215,
-    text216,
-    text217,
-    text218,
-    text219,
-    text220,
-    text221,
-    text222,
-    text223,
-    text224,
-    text225,
-    text226,
-    text227,
-    text228,
-    text229,
-    text230,
-    text231,
-    text232,
-    text233,
-    text234,
-    text235,
-    text236,
-    text237,
-    text238,
-    text239,
-    text240,
-    text241,
-    text242,
-    text243,
-    text244,
-    text245,
-    text246,
-    text247,
-    text248,
-    text249,
-    text250,
-    text251,
-    text252,
-    text253,
-    text254,
-    text255,
-    text256,
-    aus8,
-    text257,
-    elmax,
-    text258,
-    rwl34,
-    text259,
-    text260,
-    text261,
-    text262,
-    text263,
-    text264,
-    text265,
-    text266,
-    text267,
-    text268,
-    text269,
-    text270,
-    text271,
-    text272,
-    text273,
-    text274,
-    number1,
-    number2,
-    text275,
-    mercorne,
-    text276,
-    text277,
-    text278,
-    text279,
-    text280,
-    text281,
-    text282,
-    text283,
-    text284,
-    text285,
-    text286,
-    text287,
-    text288,
-    text289,
-    text290,
-    text291,
-    text292,
-    text293,
-    text294,
-    text295,
-    text296,
-    text297,
-    text298,
-    text299,
-    text300,
-    text301,
-    text302,
-    text303,
-    text304,
-    text305,
-    text306,
-    text307,
-    text308,
-    text309,
-    text310,
-    text311,
-    text312,
-    text313,
-    text314,
-    text315,
-    text316,
-    text317,
-    text318,
-    text319,
-    number3,
-    number4,
-    text320,
-    text321,
-    number5,
-    text322,
-    text323,
-    text324,
-    text325,
-    text326,
-    number6,
-    address1,
-    address2,
-    address3,
     x01S21,
     text118,
     text119,
@@ -184,6 +63,10 @@ function MultiView(props) {
     group96Props,
     group9432Props,
     viewProps,
+    titleFilter,
+    styleTitleFilter,
+    classElementMenuFilter,
+    arrowFilter,
   } = props;
 
   return (
@@ -191,7 +74,6 @@ function MultiView(props) {
       <div className="multi-view screen">
 
         {/* ==================================================== HEADER start =================================================== */}
-
         <div className="navbar">
           <div className="navbar-link-text-10 montserrat-medium-white-16px">{navbarLinkText113}</div>
           <div className="navbar-link-text-5 montserrat-medium-white-16px">{navbarLinkText108}</div>
@@ -243,8 +125,7 @@ function MultiView(props) {
             group1Props={group84Props.group1Props}
           />
         </div>
-
-        {/* ==================================================== HEADER start =================================================== */}
+        {/* ==================================================== HEADER end =================================================== */}
 
         <Text1>{text1Props.children}</Text1>
         <div className="flex-row-6">
@@ -262,359 +143,118 @@ function MultiView(props) {
           </div>
         </div>
         <div className="flex-row-7">
-          <div className="overlap-group30">
-            <div className="rectangle-18"></div>
-            <div className="rectangle-283"></div>
-            <div className="rectangle-285"></div>
-            <div className="rectangle-286"></div>
-            <div className="rectangle-287"></div>
-            <div className="rectangle-288"></div>
-            <div className="rectangle-289"></div>
-            <div className="rectangle-282"></div>
-            <div className="rectangle-284"></div>
-            <div className="rectangle-281"></div>
-            <div className="rectangle-280"></div>
-            <div className="text-112 montserrat-bold-white-20px">{text215}</div>
-            <div className="text-113 montserrat-semi-bold-licorice-20px">{text216}</div>
-            <img alt=""
-              className="group-6"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"
-            />
-            <div className="text-114 montserrat-semi-bold-white-20px">{text217}</div>
-            <div className="text-115 montserrat-medium-licorice-16px">{text218}</div>
-            <div className="text-116 montserrat-medium-fuel-yellow-16px">{text219}</div>
-            <div className="text-117 montserrat-medium-fuel-yellow-16px">{text220}</div>
-            <div className="text-118 montserrat-medium-fuel-yellow-16px">{text221}</div>
-            <div className="text-119 montserrat-medium-fuel-yellow-16px">{text222}</div>
-            <div className="text-120 montserrat-medium-fuel-yellow-16px">{text223}</div>
-            <img alt=""
-              className="group-7"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"
-            />
-            <div className="text-121 montserrat-semi-bold-white-20px">{text224}</div>
-            <img alt=""
-              className="group-8"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"
-            />
-            <div className="text-122 montserrat-semi-bold-white-20px">{text225}</div>
-            <img alt=""
-              className="group-9"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"
-            />
-            <div className="overlap-group26">
-              <img alt=""
-                className="line-30"
-                src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62c1ae4dd5fc6f4e2da3c646/img/line-30-4@2x.svg"
-              />
-              <img alt=""
-                className="line-31"
-                src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62c1ae4dd5fc6f4e2da3c646/img/line-31-2@2x.svg"
-              />
-              <div className="ellipse-31"></div>
-              <div className="ellipse-33"></div>
-              <div className="ellipse-32"></div>
-              <div className="ellipse-34"></div>
-            </div>
-            <div className="overlap-group-container">
-              <div className="overlap-group">
-                <div className="ellipse-3"></div>
+
+          {/* -------------------------------- */}
+          <ul>
+            <Collapse classElementMenuFilter="rectangle-281" titleFilter="Фильтр товаров" styleTitleFilter="text-114 montserrat-bold-white-20px">
+              {titleFilter} {styleTitleFilter} {classElementMenuFilter} {arrowFilter}
+              <div className="filterPriceBox-1">
+                <div className="text-113 montserrat-semi-bold-licorice-20px">Цена</div>
+                <img alt="" className="group-6" src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"></img>
+
+                <div>
+                  {/* <div className="containerRangeFilter">
+                    <div className="rangeline-yellow">
+                      <div className="circle-yellow"></div>
+                      <div className="circle-black"></div>
+                      <div className="textrange-left montserrat-medium-licorice-14px">  2000 грн.</div>
+                    </div>
+                    <div className="rangeline-yellow-right">
+                      <div className="circle-yellow-right"  >
+                        <div className="circle-black-right"></div>
+                        <div className="textrange-right montserrat-medium-licorice-14px"> 5000 грн.</div></div>
+                    </div>
+                  </div> */}
+
+                  <FilterPriceRangeInputBlock >
+
+                  </FilterPriceRangeInputBlock>
+
+                </div>
               </div>
-              <div className="overlap-group-1">
-                <div className="ellipse-3"></div>
-              </div>
-            </div>
-            <div className="rectangle-217 border-1px-fuel-yellow"></div>
-            <div className="text-123 montserrat-medium-licorice-16px">{text226}</div>
-            <div className="rectangle-218 border-1px-black-2"></div>
-            <div className="text-124 montserrat-medium-licorice-16px">{text227}</div>
-            <div className="rectangle-219 border-1px-black-2"></div>
-            <div className="text-125 montserrat-medium-licorice-16px">{text228}</div>
-            <div className="rectangle-220 border-1px-black-2"></div>
-            <div className="text-126 montserrat-medium-licorice-16px">{text229}</div>
-            <div className="rectangle-221 border-1px-black-2"></div>
-            <div className="text-127 montserrat-medium-fuel-yellow-16px">{text230}</div>
-            <div className="text-128 montserrat-medium-licorice-16px">{text231}</div>
-            <div className="rectangle-222 border-1px-black-2"></div>
-            <div className="text-129 montserrat-medium-fuel-yellow-16px">{text232}</div>
-            <div className="text-130 montserrat-medium-licorice-16px">{text233}</div>
-            <div className="rectangle-223 border-1px-black-2"></div>
-            <div className="text-131 montserrat-medium-fuel-yellow-16px">{text234}</div>
-            <div className="text-132 montserrat-medium-licorice-16px">{text235}</div>
-            <div className="rectangle-224 border-1px-black-2"></div>
-            <div className="text-133 montserrat-medium-fuel-yellow-16px">{text236}</div>
-            <div className="text-134 montserrat-medium-licorice-16px">{text237}</div>
-            <div className="rectangle-225 border-1px-black-2"></div>
-            <div className="text-135 montserrat-medium-fuel-yellow-16px">{text238}</div>
-            <div className="text-136 montserrat-medium-licorice-16px">{text239}</div>
-            <div className="rectangle-226 border-1px-black-2"></div>
-            <div className="text-137 montserrat-medium-fuel-yellow-16px">{text240}</div>
-            <div className="text-138 montserrat-medium-licorice-16px">{text241}</div>
-            <div className="rectangle-227 border-1px-black-2"></div>
-            <div className="text-139 montserrat-medium-fuel-yellow-16px">{text242}</div>
-            <div className="text-140 montserrat-medium-licorice-16px">{text243}</div>
-            <div className="rectangle-228 border-1px-black-2"></div>
-            <div className="text-141 montserrat-medium-fuel-yellow-16px">{text244}</div>
-            <div className="text-142 montserrat-medium-licorice-16px">{text245}</div>
-            <div className="rectangle-229 border-1px-black-2"></div>
-            <div className="text-143 montserrat-medium-licorice-16px">{text246}</div>
-            <div className="text-144 montserrat-medium-fuel-yellow-16px">{text247}</div>
-            <div className="text-145 montserrat-medium-fuel-yellow-16px">{text248}</div>
-            <div className="text-146 montserrat-medium-fuel-yellow-16px">{text249}</div>
-            <div className="text-147 montserrat-medium-fuel-yellow-16px">{text250}</div>
-            <div className="text-148 montserrat-medium-fuel-yellow-16px">{text251}</div>
-            <div className="rectangle-230 border-1px-black-2"></div>
-            <div className="text-149 montserrat-medium-licorice-16px">{text252}</div>
-            <div className="rectangle-231 border-1px-black-2"></div>
-            <div className="text-150 montserrat-medium-licorice-16px">{text253}</div>
-            <div className="rectangle-232 border-1px-black-2"></div>
-            <div className="text-151 montserrat-medium-licorice-16px">{text254}</div>
-            <div className="rectangle-233 border-1px-black-2"></div>
-            <div className="text-152 montserrat-medium-licorice-16px">{text255}</div>
-            <div className="rectangle-234 border-1px-black-2"></div>
-            <div className="text-153 montserrat-medium-fuel-yellow-16px">{text256}</div>
-            <div className="aus-8 montserrat-medium-licorice-16px">{aus8}</div>
-            <div className="rectangle-235 border-1px-black-2"></div>
-            <div className="text-154 montserrat-medium-fuel-yellow-16px">{text257}</div>
-            <div className="elmax montserrat-medium-licorice-16px">{elmax}</div>
-            <div className="rectangle-236 border-1px-black-2"></div>
-            <div className="text-155 montserrat-medium-fuel-yellow-16px">{text258}</div>
-            <div className="rwl-34 montserrat-medium-licorice-16px">{rwl34}</div>
-            <div className="rectangle-237 border-1px-black-2"></div>
-            <div className="text-156 montserrat-medium-fuel-yellow-16px">{text259}</div>
-            <div className="text-157 montserrat-medium-licorice-16px">{text260}</div>
-            <div className="rectangle-238 border-1px-black-2"></div>
-            <div className="text-158 montserrat-medium-fuel-yellow-16px">{text261}</div>
-            <div className="text-159 montserrat-medium-licorice-16px">{text262}</div>
-            <div className="rectangle-239 border-1px-black-2"></div>
-            <div className="text-160 montserrat-medium-fuel-yellow-16px">{text263}</div>
-            <div className="text-161 montserrat-medium-licorice-16px">{text264}</div>
-            <div className="text-162 montserrat-medium-licorice-16px">{text265}</div>
-            <div className="rectangle-240 border-1px-black-2"></div>
-            <div className="text-163 montserrat-medium-fuel-yellow-16px">{text266}</div>
-            <div className="rectangle-241 border-1px-black-2"></div>
-            <div className="text-164 montserrat-medium-licorice-16px">{text267}</div>
-            <div className="text-165 montserrat-medium-fuel-yellow-16px">{text268}</div>
-            <div className="rectangle-276 border-1px-black-2"></div>
-            <div className="text-166 montserrat-medium-fuel-yellow-16px">{text269}</div>
-            <div className="text-167 montserrat-medium-licorice-16px">{text270}</div>
-            <div className="rectangle-242 border-1px-black-2"></div>
-            <div className="text-168 montserrat-semi-bold-white-20px">{text271}</div>
-            <div className="text-169 montserrat-semi-bold-white-20px">{text272}</div>
-            <img alt=""
-              className="group-10"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-6@2x.svg"
-            />
-            <img alt=""
-              className="group-11"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-6@2x.svg"
-            />
-            <div className="text-170 montserrat-semi-bold-white-20px">{text273}</div>
-            <img alt=""
-              className="group-12"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc6596605e1910134de01a/img/group-8@2x.svg"
-            />
-            <div className="text-171 montserrat-medium-licorice-16px">{text274}</div>
-            <div className="number montserrat-medium-licorice-16px">{number1}</div>
-            <div className="number-1 montserrat-medium-licorice-16px">{number2}</div>
-            <div className="rectangle-265 border-1px-black-2"></div>
-            <div className="rectangle-267 border-1px-celeste"></div>
-            <div className="text-172 montserrat-medium-licorice-16px">{text275}</div>
-            <div className="rectangle-266 border-1px-black-2"></div>
-            <div className="rectangle-270 border-1px-black-2"></div>
-            <div className="mercorne montserrat-medium-licorice-16px">{mercorne}</div>
-            <div className="text-173 montserrat-medium-fuel-yellow-16px">{text276}</div>
-            <div className="text-174 montserrat-medium-fuel-yellow-16px">{text277}</div>
-            <div className="text-175 montserrat-medium-fuel-yellow-16px">{text278}</div>
-            <div className="text-176 montserrat-medium-fuel-yellow-16px">{text279}</div>
-            <div className="text-177 montserrat-medium-fuel-yellow-16px">{text280}</div>
-            <div className="rectangle-243 border-1px-black-2"></div>
-            <div className="text-178 montserrat-medium-licorice-16px">{text281}</div>
-            <div className="rectangle-244 border-1px-black-2"></div>
-            <div className="text-179 montserrat-medium-licorice-16px">{text282}</div>
-            <div className="rectangle-245 border-1px-black-2"></div>
-            <div className="text-180 montserrat-medium-licorice-16px">{text283}</div>
-            <div className="rectangle-246 border-1px-black-2"></div>
-            <div className="text-181 montserrat-medium-licorice-16px">{text284}</div>
-            <div className="rectangle-247 border-1px-black-2"></div>
-            <div className="text-182 montserrat-medium-fuel-yellow-16px">{text285}</div>
-            <div className="text-183 montserrat-medium-licorice-16px">{text286}</div>
-            <div className="rectangle-248 border-1px-black-2"></div>
-            <div className="text-184 montserrat-medium-fuel-yellow-16px">{text287}</div>
-            <div className="rectangle-249 border-1px-black-2"></div>
-            <div className="text-185 montserrat-medium-fuel-yellow-16px">{text288}</div>
-            <div className="text-186 montserrat-medium-licorice-16px">{text289}</div>
-            <div className="rectangle-250 border-1px-black-2"></div>
-            <div className="text-187 montserrat-medium-fuel-yellow-16px">{text290}</div>
-            <div className="text-188 montserrat-medium-licorice-16px">{text291}</div>
-            <div className="rectangle-251 border-1px-black-2"></div>
-            <div className="text-189 montserrat-medium-fuel-yellow-16px">{text292}</div>
-            <div className="text-190 montserrat-medium-licorice-16px">{text293}</div>
-            <div className="rectangle-252 border-1px-black-2"></div>
-            <div className="text-191 montserrat-medium-fuel-yellow-16px">{text294}</div>
-            <div className="text-192 montserrat-medium-licorice-16px">{text295}</div>
-            <div className="text-193 montserrat-medium-licorice-16px">{text296}</div>
-            <div className="rectangle-253 border-1px-black-2"></div>
-            <div className="text-194 montserrat-semi-bold-white-20px">{text297}</div>
-            <img alt=""
-              className="group-13"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"
-            />
-            <div className="text-195 montserrat-medium-licorice-16px">{text298}</div>
-            <div className="text-196 montserrat-medium-fuel-yellow-16px">{text299}</div>
-            <div className="text-197 montserrat-medium-fuel-yellow-16px">{text300}</div>
-            <div className="text-198 montserrat-medium-fuel-yellow-16px">{text301}</div>
-            <div className="text-199 montserrat-medium-fuel-yellow-16px">{text302}</div>
-            <div className="text-200 montserrat-medium-fuel-yellow-16px">{text303}</div>
-            <div className="rectangle-254 border-1px-black-2"></div>
-            <div className="text-201 montserrat-medium-licorice-16px">{text304}</div>
-            <div className="rectangle-255 border-1px-black-2"></div>
-            <div className="text-202 montserrat-medium-licorice-16px">{text305}</div>
-            <div className="text-203 montserrat-medium-licorice-16px">{text306}</div>
-            <div className="rectangle-256 border-1px-black-2"></div>
-            <div className="rectangle-257 border-1px-black-2"></div>
-            <div className="rectangle-258 border-1px-black-2"></div>
-            <div className="text-204 montserrat-medium-fuel-yellow-16px">{text307}</div>
-            <div className="text-205 montserrat-medium-licorice-16px">{text308}</div>
-            <div className="text-206 montserrat-medium-licorice-16px">{text309}</div>
-            <div className="rectangle-259 border-1px-black-2"></div>
-            <div className="text-207 montserrat-medium-fuel-yellow-16px">{text310}</div>
-            <div className="rectangle-260 border-1px-black-2"></div>
-            <div className="text-208 montserrat-medium-fuel-yellow-16px">{text311}</div>
-            <div className="text-209 montserrat-medium-licorice-16px">{text312}</div>
-            <div className="text-210 montserrat-medium-licorice-16px">{text313}</div>
-            <div className="rectangle-261 border-1px-black-2"></div>
-            <div className="text-211 montserrat-medium-fuel-yellow-16px">{text314}</div>
-            <div className="text-212 montserrat-medium-licorice-16px">{text315}</div>
-            <div className="rectangle-262 border-1px-black-2"></div>
-            <div className="text-213 montserrat-medium-fuel-yellow-16px">{text316}</div>
-            <div className="text-214 montserrat-medium-licorice-16px">{text317}</div>
-            <div className="rectangle-263 border-1px-black-2"></div>
-            <div className="text-215 montserrat-medium-fuel-yellow-16px">{text318}</div>
-            <div className="text-216 montserrat-medium-licorice-16px">{text319}</div>
-            <div className="rectangle-264 border-1px-black-2"></div>
-            <img alt=""
-              className="line-31-1"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/line-31@2x.svg"
-            />
-            <div className="overlap-group-container-1">
-              <div className="overlap-group">
-                <div className="ellipse-3"></div>
-              </div>
-              <div className="overlap-group-1">
-                <div className="ellipse-3"></div>
-              </div>
-            </div>
-            <div className="number-2 montserrat-medium-licorice-16px">{number3}</div>
-            <div className="number-3 montserrat-medium-licorice-16px">{number4}</div>
-            <div className="rectangle-275 border-1px-celeste"></div>
-            <img alt=""
-              className="line-34"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/line-31@2x.svg"
-            />
-            <div className="text-217 montserrat-semi-bold-white-20px">{text320}</div>
-            <div className="text-218 montserrat-semi-bold-white-20px">{text321}</div>
-            <img alt=""
-              className="group-14"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-6@2x.svg"
-            />
-            <img alt=""
-              className="group-15"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-6@2x.svg"
-            />
-            <div className="overlap-group-container-2">
-              <div className="overlap-group">
-                <div className="ellipse-3"></div>
-              </div>
-              <div className="overlap-group-1">
-                <div className="ellipse-3"></div>
-              </div>
-            </div>
-            <div className="number-4 montserrat-medium-licorice-16px">{number5}</div>
-            <div className="text-219 montserrat-medium-licorice-16px">{text322}</div>
-            <div className="text-220 montserrat-medium-licorice-16px">{text323}</div>
-            <div className="text-221 montserrat-medium-licorice-16px">{text324}</div>
-            <div className="text-222 montserrat-medium-licorice-16px">{text325}</div>
-            <div className="text-223 montserrat-medium-licorice-16px">{text326}</div>
-            <div className="number-5 montserrat-medium-licorice-16px">{number6}</div>
-            <div className="rectangle-269 border-1px-celeste"></div>
-            <img alt=""
-              className="line-33"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/line-31@2x.svg"
-            />
-            <img alt=""
-              className="icon-star-3"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <img alt=""
-              className="icon-star-4"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <img alt=""
-              className="icon-star-5"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <img alt=""
-              className="icon-star-6"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <img alt=""
-              className="icon-star-7"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <div className="rectangle-271 border-1px-black-2"></div>
-            <img alt=""
-              className="icon-star-8"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <img alt=""
-              className="icon-star-9"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <img alt=""
-              className="icon-star-10"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <img alt=""
-              className="icon-star-11"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <div className="rectangle-272 border-1px-black-2"></div>
-            <img alt=""
-              className="icon-star-12"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <img alt=""
-              className="icon-star-13"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <img alt=""
-              className="icon-star-14"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <div className="rectangle-273 border-1px-black-2"></div>
-            <img alt=""
-              className="icon-star-15"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <img alt=""
-              className="icon-star-16"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <div className="rectangle-274 border-1px-black-2"></div>
-            <img alt=""
-              className="icon-star-17"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/star-21@2x.svg"
-            />
-            <div className="rectangle-21"></div>
-            <div className="address-2 montserrat-medium-licorice-16px">{address1}</div>
-            <div className="address-3 montserrat-medium-licorice-16px">{address2}</div>
-            <div className="address-4 montserrat-medium-licorice-14px">{address3}</div>
-            <div className="rectangle-268 border-1px-celeste"></div>
-            <img alt=""
-              className="line-32"
-              src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/line-31@2x.svg"
-            />
-          </div>
+
+              <li >
+                <Collapse classElementMenuFilter="rectangle-281" arrowFilter={<img alt="arrow" src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"></img>}
+                  titleFilter="Производство" styleTitleFilter="text-114 montserrat-semi-bold-white-20px"
+                >
+                  <div className='filterPriceBox-2'>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="production" className="custom-checkbox" id="production" />
+                        <label for='production'>SpaceX</label>
+                        <span className="text-116 montserrat-medium-fuel-yellow-16px">(50)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+              </li>
+              <li >
+                <Collapse classElementMenuFilter="rectangle-281" arrowFilter={<img alt="arrow" src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"></img>}
+                  titleFilter="Сталь" styleTitleFilter="text-114 montserrat-semi-bold-white-20px"
+                >
+                  <div className='filterPriceBox-2'>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="steel" className="custom-checkbox" id="steel" />
+                        <label for='steel'>Дамаск</label>
+                        <span className="text-116 montserrat-medium-fuel-yellow-16px">(20)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+              </li>
+              <li >
+                <Collapse classElementMenuFilter="rectangle-281" arrowFilter={<img alt="arrow" src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"></img>}
+                  titleFilter="Рукоять" styleTitleFilter="text-114 montserrat-semi-bold-white-20px"
+                >
+                  <div className='filterPriceBox-2'>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="helve" className="custom-checkbox" id="helve" />
+                        <label for='helve'>Дуб</label>
+                        <span className="text-116 montserrat-medium-fuel-yellow-16px">(50)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+              </li>
+              <li >
+                <Collapse classElementMenuFilter="rectangle-281" arrowFilter={<img alt="arrow" src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"></img>}
+                  titleFilter="Гарда и тыльник" styleTitleFilter="text-114 montserrat-semi-bold-white-20px"
+                >
+                  <div className='filterPriceBox-2'>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="garda" className="custom-checkbox" id="garda" />
+                        <label for='garda'>Металл</label>
+                        <span className="text-116 montserrat-medium-fuel-yellow-16px">(30)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+              </li>
+              <li >
+                <Collapse classElementMenuFilter="rectangle-281" arrowFilter={<img alt="arrow" src="https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62bc20fb14c5c7c964fb025a/img/group-2@2x.svg"></img>}
+                  titleFilter="Золочение" styleTitleFilter="text-114 montserrat-semi-bold-white-20px"
+                >
+                  <div className='filterPriceBox-2'>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="zolot" className="custom-checkbox" id="zolot" />
+                        <label for='zolot'>Золочение</label>
+                        <span className="text-116 montserrat-medium-fuel-yellow-16px">(35)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+              </li></Collapse>
+          </ul>
+
+
+          {/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+
+          {/* -------------------------------- */}
+
 
           <div className="contentPageMulti">
             <div className="containerProductsMultiCart">
@@ -682,6 +322,7 @@ function MultiView(props) {
             <button className="overlap-group24 border-2px-fuel-yellow">
               <div className="text-110 montserrat-semi-bold-fuel-yellow-20px">{text213}</div>
             </button>
+
           </div>
         </div>
 

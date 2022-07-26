@@ -40,7 +40,7 @@ const group84Data = {
 };
 
 const text1Data = {
-    children: "Разделочные ножи",
+    children: "Подарочные ножи",
 };
 
 const maskGroup1Data = {
@@ -135,7 +135,7 @@ const infozlatmaxru5Data = {
 
 const infozlatmaxru6Data = {
     children: "info@zlatmax.uk",
-    className: "infozlatmaxru",
+    className: "infozlatmaxuk",
 };
 
 const group95Data = {
@@ -169,13 +169,13 @@ const multiViewData = {
     navbarLinkText110: "Контакты",
     navbarLinkText117: "Личный кабинет",
     text104: "Каталог ножей",
-    text105: "Клинковое оружие",
+    text105: "Клинковый сувенир",
     text106: "Сувенирные изделия",
     armytek: "Фонари ARMYTEK",
     text107: "Сопуствующие товары",
     text116: "Поиск",
     text114: "Главная",
-    text115: "Разделочные ножи",
+    text115: "Подарочные ножи",
     text327: "По популярности",
     text215: "Фильтр товаров",
     text216: "Цена",
@@ -188,8 +188,8 @@ const multiViewData = {
     text223: "(170)",
     text224: "Сталь",
     text225: "Рукоять",
-    text226: "Булат Сергея Баранова",
-    text227: "Булат Умерова",
+    text226: "Pesso",
+    text227: "Cobalt",
     text228: "ЗЗОСС",
     text229: "ЗИК",
     text230: "(170)",
@@ -203,9 +203,9 @@ const multiViewData = {
     text238: "(170)",
     text239: "НИКОН",
     text240: "(170)",
-    text241: "Оружейник",
+    text241: "Tricky",
     text242: "(170)",
-    text243: "РОСоружие",
+    text243: "Сувенир",
     text244: "(170)",
     text245: "СТИЛЬ-М",
     text246: "100Х13М",
@@ -299,7 +299,6 @@ const multiViewData = {
     text325: "2/5",
     text326: "1/5",
     number6: "90",
-    address1: "2000 грн.",
     address2: "5000 грн.",
     address3: "5000 грн.",
     x01S21: "https://anima-uploads.s3.amazonaws.com/projects/62bc1e7a1d7decf3ee18d7fe/releases/62c1a97b02d46bac82824b84/img/01s-2@2x.png",
